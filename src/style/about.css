@@ -11,39 +11,40 @@
   line-height: normal;
 }
 .about-firstline {
-  /* margin-left: 150px;
-  margin-right: 150px; */
   color: #e4ddd6;
   text-align: center;
   font-family: Prociono;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .about-boxes{
     text-align: center;
-    /* margin-left: 100px; */
 }
 .box {
-  border: solid 4px #b18e64;
+  border: solid 4px #b18e64 ;
   background-color: #e8c897;
-  border-radius: 100%;
   display: flex;
   width: 228.753px;
   height: 228.753px;
   flex-direction: column;
   justify-content: center;
+  border-radius: 100%;
   color: #665039;
   text-align: center;
   font-family: Prociono;
-  font-size: 19.275px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: 18.5px;
   line-height: normal;
+  font-weight: 400;
   margin: 35px;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
 }
 
+.box:hover {
+  transform: translate(0px, 10px); 
+}
 .join-box{
     display: flex;
 flex-direction: column;
@@ -51,7 +52,7 @@ text-align: center;
 align-items: center;
 }
 .join-btn{
-    color: #665039;
+color: #665039;
 text-align: center;
 font-family: Playball;
 font-size: 40.274px;
@@ -73,9 +74,46 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-.map-img{
+/* .map-img{
     margin-left: 50px;
+} */
+.delight{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
-.contact-text{
-  text-align: justify;
+.delight_img{
+  margin: 10px;
+}
+.blog-card{
+width: 375px;
+  border-radius: 0%;
+  box-shadow: 0 7px 7px -5px rgba(0, 0, 17, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+.blog-card:hover{
+  transform: translate(0px, 10px); 
+}
+.card-img-top{
+  border-radius: 0%;
+}
+
+.card-custom{
+  background-color: rgb(251, 248, 243);
+  /* color: #665039; */
+  /* text-align: center; */
+  font-family: Prociono;
+  font-size: 18.5px;
+  line-height: normal;
+  /* font-weight: 400; */
+  margin: 35px;
+}
+.card-title{
+  font-weight: 600;
+}
+@media screen and (max-width: 400px) {
+  .map-img{
+    margin-top: 50px;
+   size: 50px;
+}
 }

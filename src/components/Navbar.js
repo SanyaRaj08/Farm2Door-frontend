@@ -3,8 +3,7 @@ import "../style/navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-custom">
+      <nav className="navbar navbar-expand-lg navbar-custom ">
         <div className="container-fluid">
           <Link className="navbar-brand " to="/">
           FarmToDoor
@@ -27,54 +26,25 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  to="/Farmer"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/farmer_auth">
                   Farmer
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link className="dropdown-item" to="/Signup_farmer">
-                      Signup
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/Login_farmer">
-                      Login
-                    </Link>
-                  </li>
-                  
-                </ul>
+                </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  to="/Buyer"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/farmer_content">
+                  FarmerContent
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/buyer_auth">
                   Buyer
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link className="dropdown-item" to="/Signup_buyer">
-                    Signup
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/Login_buyer">
-                      Login
-                    </Link>
-                  </li>
-                  
-                  
-                </ul>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/Faq">
+                  FAQ
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
@@ -86,7 +56,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    
   );
 };
 

@@ -7,10 +7,7 @@ const Home = () => {
   return (
 <>
 
-    <div className='home-container container-fluid'>
-      <div className="home_img">
-        <img className='field-img' src={home_img} alt="" />
-      </div>
+    <div className='home-container'>
       <div className="home-text">
         <p>Empowering Farmers, Connecting Consumers.</p>
       </div>

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&family=Prociono&display=swap');
+.navbar{
+  position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 100;
+    box-shadow: 0 0 30px rgba(10, 5, 0, 0.5); /* New box shadow color */
+}
 .navbar-custom {
-  background-color: #665039;
+   background-color: #665039;
+   
 }
 .navbar-brand {
   color: #e8c897;

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Farmer = () => {
+const Map = () => {
   return (
     <div>
-      Farmer content
+      
     </div>
   )
 }
 
-export default Farmer
+export default Map
