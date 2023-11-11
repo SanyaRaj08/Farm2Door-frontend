@@ -10,8 +10,10 @@ import Buyerlogin from "./components/authorization/Buyer/Buyerlogin";
 import Buyersignup from "./components/authorization/Buyer/Buyersignup";
 import Farmersignup from "./components/authorization/Farmer/Farmersignup";
 import Farmerlogin from "./components/authorization/Farmer/Farmerlogin";
-import FContent from "./components/FarmerContent/FContent";
 import FAQ from "./components/FAQ/FAQ";
+import Farmer_Account from "./components/FarmerContent/Farmer_Account";
+import Farmer_Order from "./components/FarmerContent/Farmer_Order";
+import Farmer_Product from "./components/FarmerContent/Farmer_Product";
 
 
 // import Signup from "./components/authentication/Signup";
@@ -28,9 +30,11 @@ function App() {
             <Route exact path="/Buyerlogin" element={<Buyerlogin/>} />
             <Route exact path="/Buyersignup" element={<Buyersignup />} />
             <Route exact path="/Farmerlogin" element={<Farmerlogin/>} />
-            <Route exact path="/FarmerContent" element={<FContent/>} />
+            <Route exact path="/FarmerContent" element={<Farmer_Account/>} />
             <Route exact path="/Farmersignup" element={<Farmersignup />} />
             <Route exact path="/Faq" element={<FAQ/>} />
+            <Route exact path="/FarmerOrder" element={<Farmer_Order/>} />
+            <Route exact path="/FarmerProduct" element={<Farmer_Product/>} />
           </Routes>
         </div>
         <Footer/>
